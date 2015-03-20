@@ -3,6 +3,7 @@
 ## Installation
 >apt-get install build-essential<br>
 >git clone https://github.com/purpleroc/OpenKeeper<br>
+>cd openkeeper/<br> 
 >cd openkeeper-cli-1.2/<br> 
 >cd 32/　　　or 　　　cd 64/<br>
 >sudo ./install.sh

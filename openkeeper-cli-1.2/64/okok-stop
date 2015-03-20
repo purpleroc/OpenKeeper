@@ -1,0 +1,10 @@
+#!/bin/sh
+# Must be root
+if test "`/usr/bin/id -u`" != 0 ; then
+    echo "$0: You must be root to run this script" >& 2
+    exit 1
+fi
+pid=`cat /tmp/okok.pid | awk '{print$1}'`
+kill $pid
+/usr/bin/ok-stop
+rm /tmp/okok.pid

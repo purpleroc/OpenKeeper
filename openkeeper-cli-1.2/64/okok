@@ -1,0 +1,11 @@
+#!/bin/bash
+# Must be root
+if test "`/usr/bin/id -u`" != 0 ; then
+    echo "$0: You must be root to run this script" >& 2
+    exit 1
+fi
+/usr/bin/okok-stop > /dev/null 2>&1
+/usr/bin/ok
+sh /usr/local/openkeeper/okok.sh > /tmp/ok.log 2>&1 &
+pid=`ps ax | grep okok.sh | awk '{print$1}'`
+echo $pid > /tmp/okok.pid

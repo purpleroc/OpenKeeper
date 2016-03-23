@@ -6,7 +6,7 @@
 >cd openkeeper/<br> 
 >cd openkeeper-cli-1.2/<br> 
 >cd 32/　　　or 　　　cd 64/<br>
->sudo ./install.sh
+>sudo sh -x install.sh
 
 ## Usage
 * 1.　Config<br> 
